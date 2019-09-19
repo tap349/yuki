@@ -50,7 +50,7 @@ defmodule Yuki.MixProject do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:nimble_csv, "~> 0.6"}
     ]
   end
