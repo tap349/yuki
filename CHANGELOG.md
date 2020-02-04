@@ -1,3 +1,7 @@
+## v0.3.0
+
+- don't allow to configure `separator` and `escape` options any more
+
 ## v0.2.1
 
 - fix error when not all TSV options are overriden
