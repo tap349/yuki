@@ -1,3 +1,7 @@
+## v0.2.1
+
+- fix error when not all TSV options are overriden
+
 ## v0.2.0
 
 - allow to configure `separator` and `escape` options for TSV parser

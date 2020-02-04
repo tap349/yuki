@@ -1,8 +1,6 @@
 defmodule Yuki.Parsers.TSV do
-  @separator Application.get_env(:yuki, :tsv)[:separator]
-  @escape Application.get_env(:yuki, :tsv)[:escape]
-
-  NimbleCSV.define(Default, separator: @separator, escape: @escape)
+  @tsv_options Application.get_env(:yuki, :tsv)
+  NimbleCSV.define(Default, @tsv_options)
 
   def parse!(tsv, opts \\ []) do
     Yuki.Parsers.CSV.parse!(tsv, Default, opts)
